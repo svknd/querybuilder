@@ -25,6 +25,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.9",
         "Operating System :: OS Independent"
     ],
-    packages=["querybuilder"],
-    include_package_data=True
+    py_modules=["querybuilder"],             # Name of the python package
+    package_dir={'': 'src/querybuilder'},     # Directory of the source code of the package
+    install_requires=[]
 )
