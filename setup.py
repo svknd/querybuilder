@@ -1,15 +1,11 @@
-from setuptools import setup, find_packages
-from codecs import open
-from os import path
 
-HERE = path.abspath(path.dirname(__file__))
+import setuptools
 
-with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
-# This call to setup() does all the work
-setup(
-    name="querybuilder",
+setuptools.setup(
+    name="svknd-querybuilder",
     version="0.1.0",
     description="SVKND querybuilder",
     long_description=long_description,
