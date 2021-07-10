@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="svknd-querybuilder",
-    version="0.1.0",
+    version="0.1.1",
     description="SVKND querybuilder",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -25,7 +25,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.9",
         "Operating System :: OS Independent"
     ],
-    py_modules=["querybuilder"],             # Name of the python package
-    package_dir={'': 'src/querybuilder'},     # Directory of the source code of the package
+    packages=["querybuilder"],
+    include_package_data=True,
     install_requires=[]
 )
